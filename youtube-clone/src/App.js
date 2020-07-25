@@ -1,17 +1,26 @@
 import React from "react";
 import "./App.css";
-import { Header } from "./components";
+import { Header, SideNav, VideoCard } from "./components";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/** main
-       *   sidenav
-       *   content
-       *       taged
-       *       viedoelist
-       */}
+      <div className="main-wrapper">
+        <div className="side-nav-container">
+          <SideNav />
+        </div>
+        <div className="video-content-container">
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+        </div>
+      </div>
     </div>
   );
 }
