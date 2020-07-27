@@ -12,7 +12,12 @@ function App() {
         </div>
         <div className="main-content-container">
           <TagBar />
+          <span className="video-content-header">Recommended </span>
           <div className="video-content-container">
+            <VideoCard />
+            <VideoCard />
+            <VideoCard />
+            <VideoCard />
             <VideoCard />
             <VideoCard />
             <VideoCard />
