@@ -1,0 +1,41 @@
+.tag-bar {
+  display: flex;
+  align-items: center;
+  max-width: 82vw;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 12px 0 12px;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.tag-container::-webkit-scrollbar {
+  display: none;
+}
+
+.tag {
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #030303;
+  font-size: 0.92rem;
+  font-weight: 400;
+  border-radius: 16px;
+  height: 32px;
+  min-width: 12px;
+  width: max-content;
+  box-sizing: border-box;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: normal;
+  line-height: 2rem;
+  text-align: center;
+  margin: 10px 6px 10px 6px;
+  padding: 0 12px 0 12px;
+}
