@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Header, SideNav, VideoCard, TagBar } from "./components";
+import data from "./assets/data.json";
 
 function App() {
   return (
@@ -14,18 +15,9 @@ function App() {
           <TagBar />
           <span className="video-content-header">Recommended </span>
           <div className="video-content-container">
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
+            {data.items.map((video) => (
+              <VideoCard video={video} />
+            ))}
           </div>
         </div>
       </div>
