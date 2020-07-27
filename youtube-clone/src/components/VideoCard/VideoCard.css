@@ -23,7 +23,7 @@
   object-fit: fit;
   max-width: 36px;
   max-height: 36px;
-  border-radius: 72px;
+  border-radius: 50%;
   margin: 6px 24px 0 0px;
 }
 
