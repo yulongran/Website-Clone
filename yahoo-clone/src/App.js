@@ -1,0 +1,18 @@
+import React from "react";
+import "./App.css";
+import { Header, Main } from "./components";
+
+function App() {
+  return (
+    <div className="App">
+      <div className="header-container">
+        <Header />
+      </div>
+      <div className="main-container">
+        <Main />
+      </div>
+    </div>
+  );
+}
+
+export default App;
