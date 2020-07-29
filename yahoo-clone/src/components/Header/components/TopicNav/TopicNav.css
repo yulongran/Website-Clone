@@ -1,0 +1,41 @@
+.TopicNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.topic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.topic:hover {
+  cursor: pointer;
+}
+
+.topic-icon {
+  color: #4d00ae;
+}
+
+.topic a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.topic label {
+  color: #4d00ae;
+  font-weight: 700;
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.topic a:hover {
+  text-decoration: underline;
+}

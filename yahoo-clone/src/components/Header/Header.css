@@ -1,11 +1,16 @@
 .header {
   display: flex;
-  flex-direction: row;
-  padding: 22px 12px;
+  flex-direction: column;
   margin: 0 5vw;
+  padding: 0 12px;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  padding: 22px 0px;
   background-color: #ffffff;
   align-items: center;
-  /* position: fixed; */
 }
 
 .header-logo {
