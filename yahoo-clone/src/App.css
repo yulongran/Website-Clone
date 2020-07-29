@@ -4,9 +4,8 @@
 }
 
 .App {
-  max-height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
@@ -14,4 +13,17 @@
 .html {
   font-size: 6px;
   font-family: Verdana, Geneva, sans-serif;
+}
+
+.header-container {
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+
+.main-container {
+  margin: 22vh 5vw 2vh 5vw;
+  padding: 0 12px;
+  margin-top: 22vh;
 }
