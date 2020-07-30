@@ -1,7 +1,7 @@
 .Main {
   display: flex;
   flex-direction: row;
-  margin: 4vh 0;
+  margin: 1vh 0;
 }
 
 .news-container {
