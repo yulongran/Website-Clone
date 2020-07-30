@@ -1,42 +1,19 @@
 import React from "react";
 import "./Main.css";
+import { News, Trending } from "./components";
+import DATA from "../../assets/data.json";
 
 function Main() {
   return (
     <div className="Main">
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
-      <h1>News board</h1>
+      <div className="news-container">
+        {DATA.map((news) => (
+          <News news={news} key={news.news_title} />
+        ))}
+      </div>
+      <div className="trending-container">
+        <Trending />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,52 @@
+.Trending {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3vw 0 3vw;
+}
+
+.mark-homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-btn {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #ffffff;
+  color: #6000d6;
+  font-weight: 900;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+}
+
+.homepage-btn:hover {
+  color: #ffffff;
+  background-color: #6000d6;
+  cursor: pointer;
+}
+
+.trending-tag-container h1 {
+  font-weight: 700;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.trending-tag-list {
+  font-size: 12px;
+  font-weight: 500;
+  column-count: 2;
+  list-style-position: inside;
+}
+
+.trending-tag-list a {
+  font-size: 0.8rem;
+  color: #000767;
+  font-weight: 800;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.trending-tag-list a:hover {
+  color: #324fe1;
+}

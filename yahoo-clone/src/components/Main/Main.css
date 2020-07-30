@@ -1,4 +1,13 @@
 .Main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 4vh 0;
+}
+
+.news-container {
+  flex: 2;
+}
+
+.trending-container {
+  flex: 1;
 }

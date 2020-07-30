@@ -4,7 +4,7 @@
 }
 
 .App {
-  width: 100vw;
+  width: 100%;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -26,4 +26,5 @@
   margin: 22vh 5vw 2vh 5vw;
   padding: 0 12px;
   margin-top: 22vh;
+  overflow-x: scroll;
 }
