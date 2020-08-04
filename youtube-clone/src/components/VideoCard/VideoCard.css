@@ -1,7 +1,8 @@
 .video-card {
   display: flex;
   flex-direction: column;
-  max-width: 22%;
+  width: 22%;
+  min-width: 240px;
   max-height: 271px;
   overflow: hidden;
   justify-content: space-evenly;
