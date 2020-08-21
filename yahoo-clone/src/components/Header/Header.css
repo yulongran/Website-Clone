@@ -1,51 +1,45 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  z-index: 999;
+  /** Shadow Effect **/
   -webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
   box-shadow: 0 4px 8px -6px #222;
-}
-
-.header-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 5vw;
-  padding: 0 12px;
 }
 
 .header-top {
   display: flex;
   flex-direction: row;
   padding: 22px 0px;
-  background-color: #ffffff;
   align-items: center;
-}
-
-.header-logo {
-  border: none;
-  display: flex;
 }
 
 .logo-img {
   object-fit: contain;
-  max-width: 205px;
-  width: 18vw;
+  width: 205px;
   min-width: 90px;
-  height: auto;
 }
 
 .header-search-bar {
-  flex: 2 0 300px;
   display: flex;
   flex-direction: row;
+  width: 685px;
+  min-width: 500px;
 }
 
 .search-input-container {
   width: 100%;
   height: 46px;
-  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
   border-right: none;
   border-radius: 1px;
-  margin-left: 2vw;
+  margin-left: 28px;
 }
 
 .search-input-container input {
@@ -67,8 +61,7 @@
   align-items: center;
   background-color: #0f69ff;
   border: none;
-  width: 6vw;
-  min-width: 60px;
+  width: 100px;
 }
 
 .search-icon-container:hover {
@@ -77,54 +70,47 @@
 
 .icon {
   color: #ffffff;
-  size: 30px;
+  font-size: 32px !important;
 }
 
 .header-right-section {
-  flex: 1 0 240px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  margin-left: 100px;
 }
 
 .sign-in-btn {
   background-color: #ffffff;
-  color: #4d00ae;
+  color: var(--yahoo-color);
   font-weight: 800;
   font-size: 0.8rem;
-  border-color: #4d00ae;
-  border-radius: 8%;
-  min-width: 5.5vw;
-  padding: 4px 8px;
+  border-color: var(--yahoo-color);
+  border-radius: 4px;
+  padding: 4px 16px;
+  margin: 0 24px;
+  min-width: 80px;
 }
 
 .sign-in-btn:hover {
   cursor: pointer;
-  background-color: #4d00ae;
+  background-color: var(--yahoo-color);
   color: #ffffff;
 }
 
 .header-right-icon {
-  color: #4d00ae;
+  color: var(--yahoo-color);
+  margin: 0 6px;
+  font-size: 36px !important;
 }
 
 .header-right-icon:hover {
   cursor: pointer;
 }
 
-.header-right-icon-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-right-icon-container:hover {
-  cursor: pointer;
-}
-
-.header-right-label {
-  color: #4d00ae;
+.header-right-section > label {
+  color: var(--yahoo-color);
   font-weight: 700;
   font-size: 0.9rem;
   margin-left: 4px;

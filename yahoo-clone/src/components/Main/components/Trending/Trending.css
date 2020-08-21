@@ -1,7 +1,8 @@
 .Trending {
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-  padding: 0 3vw 0 3vw;
+  padding: 0 2.5vw;
 }
 
 .mark-homepage-container {
@@ -33,7 +34,7 @@
 }
 
 .trending-tag-list {
-  font-size: 12px;
+  font-size: 0.7rem;
   font-weight: 500;
   column-count: 2;
   list-style-position: inside;

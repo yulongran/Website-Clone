@@ -3,29 +3,13 @@
   padding: 0;
 }
 
-.App {
-  min-width: 100vw;
-  overflow-y: scroll;
-  overflow-x: scroll;
-  display: flex;
-  flex-direction: column;
-}
-
-.html {
-  font-size: 2vw;
+body {
+  --yahoo-color: #4d00ae;
+  --yahoo-background: #e8f5fe;
+  font-size: 12px;
   font-family: Verdana, Geneva, sans-serif;
 }
 
-.header-container {
-  width: 100%;
-  z-index: 1;
-  position: fixed;
-  top: 0;
-}
-
-.main-container {
-  margin: 22vh 5vw 2vh 5vw;
-  padding: 0 12px;
-  margin-top: 22vh;
-  overflow-x: scroll;
+.app {
+  overflow-x: hidden;
 }

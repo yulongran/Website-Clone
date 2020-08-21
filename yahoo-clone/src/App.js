@@ -4,13 +4,9 @@ import { Header, Main } from "./components";
 
 function App() {
   return (
-    <div className="App">
-      <div className="header-container">
-        <Header />
-      </div>
-      <div className="main-container">
-        <Main />
-      </div>
+    <div className="app">
+      <Header />
+      <Main />
     </div>
   );
 }

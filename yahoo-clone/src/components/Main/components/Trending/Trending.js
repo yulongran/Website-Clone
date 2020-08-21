@@ -26,7 +26,7 @@ function Trending() {
             <a href="/#">Susan Rice</a>
           </li>
           <li>
-            <a href="/#">Buy Microsoft Office</a>
+            <a href="/#">Buy Microsoft</a>
           </li>
           <li>
             <a href="/#">Watchmen</a>

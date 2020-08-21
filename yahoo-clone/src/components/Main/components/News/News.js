@@ -2,15 +2,6 @@ import React from "react";
 import "./News.css";
 
 function News(props) {
-
-  function truncate(s) {
-    if (s.length > 200) {
-      return s.substring(0, 200) + " ...";
-    } else {
-      return s;
-    }
-  }
-  
   return (
     <div className="News">
       <div className="news-img-container">
@@ -26,9 +17,7 @@ function News(props) {
           <label className="news-media">{props.news.news_media}</label>
         </label>
         <label className="news-title">{props.news.news_title}</label>
-        <h3 className="news-description">
-          {truncate(props.news.news_description)}
-        </h3>
+        <h3 className="news-description">{props.news.news_description}</h3>
       </div>
     </div>
   );

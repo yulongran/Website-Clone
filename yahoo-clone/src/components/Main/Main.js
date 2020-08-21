@@ -12,9 +12,7 @@ function Main() {
           <News news={news} key={news.news_title} />
         ))}
       </div>
-      <div className="trending-container">
-        <Trending />
-      </div>
+      <Trending />
     </div>
   );
 }

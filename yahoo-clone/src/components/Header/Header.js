@@ -21,35 +21,29 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="header-wrapper">
-        <div className="header-top">
-          <div className="header-logo">
-            <img
-              className="logo-img"
-              src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_205x58_frontpage_2x.png"
-              alt="Yahoo"
-            />
+      <div className="header-top">
+        <img
+          className="logo-img"
+          src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_205x58_frontpage_2x.png"
+          alt="Yahoo"
+        />
+        <form className="header-search-bar">
+          <div className="search-input-container">
+            <input type="text" />
           </div>
-          <form className="header-search-bar">
-            <div className="search-input-container">
-              <input type="text" />
-            </div>
-            <button className="search-icon-container">
-              <Search className="icon" />
-            </button>
-          </form>
-          <div className="header-right-section">
-            <button className="sign-in-btn">Sign in</button>
-            <Notifications className="header-right-icon" fontSize="large" />
-            <div className="header-right-icon-container">
-              <Email className="header-right-icon" fontSize="large" />
-              <label className="header-right-label">Mail</label>
-            </div>
-          </div>
+          <button className="search-icon-container">
+            <Search className="icon" />
+          </button>
+        </form>
+        <div className="header-right-section">
+          <button className="sign-in-btn">Sign in</button>
+          <Notifications className="header-right-icon" fontSize="large" />
+          <Email className="header-right-icon" fontSize="large"></Email>
+          <label>Mail</label>
         </div>
-        <div className={`header-bottom ${hide && "header-bottom-hide"}`}>
-          <TopicNav />
-        </div>
+      </div>
+      <div className={`header-bottom ${hide && "header-bottom-hide"}`}>
+        <TopicNav />
       </div>
     </div>
   );
